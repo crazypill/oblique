@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		FA093FFC0E7AEEB600435014 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = FA093FFB0E7AEEB600435014 /* about.png */; };
+		FADEE4ED0DF3817800EA3111 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADEE4E90DF3817800EA3111 /* MainWindow.xib */; };
+		FADEE4EF0DF3817800EA3111 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADEE4EB0DF3817800EA3111 /* MainView.xib */; };
+		FADEE50C0DF381BF00EA3111 /* ObCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5000DF381BF00EA3111 /* ObCardView.m */; };
+		FADEE50E0DF381BF00EA3111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5020DF381BF00EA3111 /* main.m */; };
+		FADEE50F0DF381BF00EA3111 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5030DF381BF00EA3111 /* MainViewController.m */; };
+		FADEE5100DF381BF00EA3111 /* ObStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5040DF381BF00EA3111 /* ObStrategies.m */; };
+		FADEE5110DF381BF00EA3111 /* PrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5050DF381BF00EA3111 /* PrefsViewController.m */; };
+		FADEE5120DF381BF00EA3111 /* ObliqueAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5060DF381BF00EA3111 /* ObliqueAppDelegate.m */; };
+		FADEE5130DF381BF00EA3111 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5070DF381BF00EA3111 /* RootViewController.m */; };
+		FADEE5500DF3832800EA3111 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = FADEE54A0DF3832800EA3111 /* info.png */; };
+		FADEE5530DF3832800EA3111 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FADEE54D0DF3832800EA3111 /* Default.png */; };
+		FADEE5540DF3832800EA3111 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FADEE54E0DF3832800EA3111 /* icon.png */; };
+		FADEE5550DF3832800EA3111 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FADEE54F0DF3832800EA3111 /* back.png */; };
+		FADEE5C00DF3867C00EA3111 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADEE5BF0DF3867C00EA3111 /* CoreGraphics.framework */; };
+		FADEE5DE0DF388C700EA3111 /* Strategies3.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5D90DF388C700EA3111 /* Strategies3.txt */; };
+		FADEE5DF0DF388C700EA3111 /* Strategies4.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5DA0DF388C700EA3111 /* Strategies4.txt */; };
+		FADEE5E00DF388C700EA3111 /* Strategies1.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5DB0DF388C700EA3111 /* Strategies1.txt */; };
+		FADEE5E10DF388C700EA3111 /* Strategies2.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5DC0DF388C700EA3111 /* Strategies2.txt */; };
+		FADEE5E20DF388C700EA3111 /* Strategies5.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5DD0DF388C700EA3111 /* Strategies5.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Oblique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oblique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32CA4F630368D1EE00C91783 /* Oblique_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oblique_Prefix.pch; sourceTree = "<group>"; };
+		FA093FFB0E7AEEB600435014 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about.png; path = images/default/about.png; sourceTree = "<group>"; };
+		FADEE4E80DF3817800EA3111 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		FADEE4E90DF3817800EA3111 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = resources/MainWindow.xib; sourceTree = "<group>"; };
+		FADEE4EB0DF3817800EA3111 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainView.xib; path = resources/MainView.xib; sourceTree = "<group>"; };
+		FADEE4F00DF381A800EA3111 /* ObCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObCommon.h; path = source/ObCommon.h; sourceTree = "<group>"; };
+		FADEE4F10DF381A800EA3111 /* ObCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObCardView.h; path = source/ObCardView.h; sourceTree = "<group>"; };
+		FADEE4F20DF381A800EA3111 /* ObStrategies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObStrategies.h; path = source/ObStrategies.h; sourceTree = "<group>"; };
+		FADEE4F40DF381A800EA3111 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = source/MainViewController.h; sourceTree = "<group>"; };
+		FADEE4F70DF381A800EA3111 /* ObliqueAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObliqueAppDelegate.h; path = source/ObliqueAppDelegate.h; sourceTree = "<group>"; };
+		FADEE4FA0DF381A800EA3111 /* PrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefsViewController.h; path = source/PrefsViewController.h; sourceTree = "<group>"; };
+		FADEE4FB0DF381A800EA3111 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = source/RootViewController.h; sourceTree = "<group>"; };
+		FADEE5000DF381BF00EA3111 /* ObCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObCardView.m; path = source/ObCardView.m; sourceTree = "<group>"; };
+		FADEE5020DF381BF00EA3111 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
+		FADEE5030DF381BF00EA3111 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = source/MainViewController.m; sourceTree = "<group>"; };
+		FADEE5040DF381BF00EA3111 /* ObStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObStrategies.m; path = source/ObStrategies.m; sourceTree = "<group>"; };
+		FADEE5050DF381BF00EA3111 /* PrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrefsViewController.m; path = source/PrefsViewController.m; sourceTree = "<group>"; };
+		FADEE5060DF381BF00EA3111 /* ObliqueAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObliqueAppDelegate.m; path = source/ObliqueAppDelegate.m; sourceTree = "<group>"; };
+		FADEE5070DF381BF00EA3111 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = source/RootViewController.m; sourceTree = "<group>"; };
+		FADEE54A0DF3832800EA3111 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = images/default/info.png; sourceTree = "<group>"; };
+		FADEE54D0DF3832800EA3111 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = images/default/Default.png; sourceTree = "<group>"; };
+		FADEE54E0DF3832800EA3111 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = images/default/icon.png; sourceTree = "<group>"; };
+		FADEE54F0DF3832800EA3111 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = images/default/back.png; sourceTree = "<group>"; };
+		FADEE5BF0DF3867C00EA3111 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FADEE5D90DF388C700EA3111 /* Strategies3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Strategies3.txt; path = resources/Strategies3.txt; sourceTree = "<group>"; };
+		FADEE5DA0DF388C700EA3111 /* Strategies4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Strategies4.txt; path = resources/Strategies4.txt; sourceTree = "<group>"; };
+		FADEE5DB0DF388C700EA3111 /* Strategies1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Strategies1.txt; path = resources/Strategies1.txt; sourceTree = "<group>"; };
+		FADEE5DC0DF388C700EA3111 /* Strategies2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Strategies2.txt; path = resources/Strategies2.txt; sourceTree = "<group>"; };
+		FADEE5DD0DF388C700EA3111 /* Strategies5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Strategies5.txt; path = resources/Strategies5.txt; sourceTree = "<group>"; };
+		FAE1A7630E64F96300750271 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				FADEE5C00DF3867C00EA3111 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Oblique.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281C6CD70DB2D82200F60ACC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				FADEE5020DF381BF00EA3111 /* main.m */,
+				FADEE5000DF381BF00EA3111 /* ObCardView.m */,
+				FADEE5040DF381BF00EA3111 /* ObStrategies.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		289233A00DB2D0730083E9F9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Oblique_Prefix.pch */,
+				FADEE4F00DF381A800EA3111 /* ObCommon.h */,
+				FADEE4F10DF381A800EA3111 /* ObCardView.h */,
+				FADEE4F20DF381A800EA3111 /* ObStrategies.h */,
+				FADEE4F70DF381A800EA3111 /* ObliqueAppDelegate.h */,
+				FADEE4F40DF381A800EA3111 /* MainViewController.h */,
+				FADEE4FA0DF381A800EA3111 /* PrefsViewController.h */,
+				FADEE4FB0DF381A800EA3111 /* RootViewController.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				289233A00DB2D0730083E9F9 /* include */,
+				281C6CD70DB2D82200F60ACC /* source */,
+				FADEE55C0DF383E000EA3111 /* controllers */,
+				29B97317FDCFA39411CA2CEA /* resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FADEE4E80DF3817800EA3111 /* Info.plist */,
+				FAE1A7630E64F96300750271 /* Entitlements.plist */,
+				FADEE4E90DF3817800EA3111 /* MainWindow.xib */,
+				FADEE4EB0DF3817800EA3111 /* MainView.xib */,
+				FADEE54A0DF3832800EA3111 /* info.png */,
+				FA093FFB0E7AEEB600435014 /* about.png */,
+				FADEE54D0DF3832800EA3111 /* Default.png */,
+				FADEE54E0DF3832800EA3111 /* icon.png */,
+				FADEE54F0DF3832800EA3111 /* back.png */,
+				FADEE5DB0DF388C700EA3111 /* Strategies1.txt */,
+				FADEE5DC0DF388C700EA3111 /* Strategies2.txt */,
+				FADEE5D90DF388C700EA3111 /* Strategies3.txt */,
+				FADEE5DA0DF388C700EA3111 /* Strategies4.txt */,
+				FADEE5DD0DF388C700EA3111 /* Strategies5.txt */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FADEE5BF0DF3867C00EA3111 /* CoreGraphics.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FADEE55C0DF383E000EA3111 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FADEE5060DF381BF00EA3111 /* ObliqueAppDelegate.m */,
+				FADEE5070DF381BF00EA3111 /* RootViewController.m */,
+				FADEE5030DF381BF00EA3111 /* MainViewController.m */,
+				FADEE5050DF381BF00EA3111 /* PrefsViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Oblique */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Oblique" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oblique;
+			productName = Oblique;
+			productReference = 1D6058910D05DD3D006BFB54 /* Oblique.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = S555K9VRCW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Oblique" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Oblique */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEE4ED0DF3817800EA3111 /* MainWindow.xib in Resources */,
+				FADEE4EF0DF3817800EA3111 /* MainView.xib in Resources */,
+				FADEE5500DF3832800EA3111 /* info.png in Resources */,
+				FADEE5530DF3832800EA3111 /* Default.png in Resources */,
+				FADEE5540DF3832800EA3111 /* icon.png in Resources */,
+				FADEE5550DF3832800EA3111 /* back.png in Resources */,
+				FADEE5DE0DF388C700EA3111 /* Strategies3.txt in Resources */,
+				FADEE5DF0DF388C700EA3111 /* Strategies4.txt in Resources */,
+				FADEE5E00DF388C700EA3111 /* Strategies1.txt in Resources */,
+				FADEE5E10DF388C700EA3111 /* Strategies2.txt in Resources */,
+				FADEE5E20DF388C700EA3111 /* Strategies5.txt in Resources */,
+				FA093FFC0E7AEEB600435014 /* about.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEE50C0DF381BF00EA3111 /* ObCardView.m in Sources */,
+				FADEE50E0DF381BF00EA3111 /* main.m in Sources */,
+				FADEE50F0DF381BF00EA3111 /* MainViewController.m in Sources */,
+				FADEE5100DF381BF00EA3111 /* ObStrategies.m in Sources */,
+				FADEE5110DF381BF00EA3111 /* PrefsViewController.m in Sources */,
+				FADEE5120DF381BF00EA3111 /* ObliqueAppDelegate.m in Sources */,
+				FADEE5130DF381BF00EA3111 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
+				INFOPLIST_FILE = resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
+				PRODUCT_NAME = Oblique;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
+				INFOPLIST_FILE = resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
+				PRODUCT_NAME = Oblique;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FA0940220E7AF16E00435014 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Distribution;
+		};
+		FA0940230E7AF16E00435014 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
+				INFOPLIST_FILE = resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
+				PRODUCT_NAME = Oblique;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		FAE1A75D0E64F93D00750271 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Adhoc;
+		};
+		FAE1A75E0E64F93D00750271 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = S555K9VRCW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
+				INFOPLIST_FILE = resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
+				PRODUCT_NAME = Oblique;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Adhoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Oblique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				FA0940230E7AF16E00435014 /* Distribution */,
+				FAE1A75E0E64F93D00750271 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Oblique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				FA0940220E7AF16E00435014 /* Distribution */,
+				FAE1A75D0E64F93D00750271 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
