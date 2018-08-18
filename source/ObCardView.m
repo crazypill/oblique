@@ -93,15 +93,6 @@ char* const firstUse  = "Thank you for using this iPhone native version of Obliq
 
 ///////////////////////////////////////////////////////////////////////////////
 
-- (void)dealloc 
-{
-	[mText release];
-	[super dealloc];
-}
-
-
-///////////////////////////////////////////////////////////////////////////////
-
 - (void)drawRect:(CGRect)rect;
 {
 	CGContextRef ctx = UIGraphicsGetCurrentContext();

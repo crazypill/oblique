@@ -69,12 +69,6 @@ const long kLineBufferMax = 1024;	// this is much bigger than it needs to be !!@
 {
 	if( mDeck )
 		free( mDeck );
-
-	// dump copyright
-	[mCopyright dealloc];
-	
-	// clean up string arrays
-	[super dealloc];
 }
 
 
@@ -155,7 +149,6 @@ const long kLineBufferMax = 1024;	// this is much bigger than it needs to be !!@
 {
 //	trace( "dumping deck: %ld\n", [mCardArray count] );
 	[mCardArray removeAllObjects];
-	[mCopyright release];
 }
 
 

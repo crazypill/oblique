@@ -46,16 +46,6 @@
 }
 
 
-- (void)dealloc 
-{
-	[rootViewController release];
-	[window release];
-    [mStrategies release];
-    
-	[super dealloc];
-}
-
-
 - (ObStrategies*)getDeck
 {
 	return mStrategies;

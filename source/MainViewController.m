@@ -54,12 +54,6 @@
 }
 
 
-- (void)dealloc 
-{
-	[super dealloc];
-}
-
-
 @end
 
 // EOF

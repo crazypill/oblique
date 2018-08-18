@@ -72,8 +72,12 @@ void LogMsg( const char* const s, ... );
 #define kCardPrefsDoneButton     @"done_pressed.png"
 #define kCardPrefsDoneButtonUp   @"done.png"
 
+#if TARGET_OS_WATCH
+#define gApp  [[WKExtension sharedExtension] delegate]
+#else
 #define gApp  ((ObliqueAppDelegate*)[[UIApplication sharedApplication] delegate])
 #define gRoot [(ObliqueAppDelegate*)[[UIApplication sharedApplication] delegate] getRoot]
+#endif
 
 #import <UIKit/UIKit.h>
 

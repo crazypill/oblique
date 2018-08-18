@@ -68,8 +68,6 @@
 	UINavigationItem* navigationItem  = [[UINavigationItem alloc] initWithTitle:@"Oblique"];
 	navigationItem.rightBarButtonItem = buttonItem;
 	[mPrefsNavigationBar pushNavigationItem:navigationItem animated:NO];
-	[navigationItem release];
-	[buttonItem release];
 }
 
 
@@ -128,16 +126,6 @@
 {
 	[super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
 	// Release anything that's not essential, such as cached data
-}
-
-
-- (void)dealloc 
-{
-	[mInfoButton release];
-	[mPrefsNavigationBar release];
-	[mCardController release];
-	[mPrefsController release];
-	[super dealloc];
 }
 
 
