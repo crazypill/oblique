@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="overlap" id="1E9-4w-l8h">
+                            <items>
+                                <group width="1" height="87" alignment="center" verticalAlignment="center" backgroundImage="CardFront" layout="overlap" id="sVC-sj-f1I">
+                                    <items>
+                                        <label width="105" height="78" alignment="center" verticalAlignment="center" semanticContentAttribute="spatial" text="Oblique Strategies" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="5" id="0Ow-1I-Y6F">
+                                            <fontDescription key="font" type="system" pointSize="8"/>
+                                        </label>
+                                    </items>
+                                    <gestureRecognizers>
+                                        <tapGestureRecognizer id="Axu-uE-V1f">
+                                            <connections>
+                                                <action selector="handleTapGesture:" destination="AgC-eL-Hgc" id="lt4-ag-6nv"/>
+                                            </connections>
+                                        </tapGestureRecognizer>
+                                        <swipeGestureRecognizer id="Qjf-pG-3iw">
+                                            <connections>
+                                                <action selector="handleSwipeGesture:" destination="AgC-eL-Hgc" id="Wax-4g-Xft"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                        <swipeGestureRecognizer direction="2" id="C3t-Bp-g0V">
+                                            <connections>
+                                                <action selector="handleSwipeGesture:" destination="AgC-eL-Hgc" id="YMa-dR-QYD"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                    </gestureRecognizers>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.10286458333333333" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cardGroup" destination="sVC-sj-f1I" id="S5C-Mb-oF3"/>
+                        <outlet property="cardText" destination="0Ow-1I-Y6F" id="Gmg-U8-hZP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="117"/>
+        </scene>
+    </scenes>
+</document>
