@@ -40,6 +40,13 @@
 	[window makeKeyAndVisible];
 }
 
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    [mStrategies persistDeck];
+}
+
+
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     [mStrategies persistDeck];
