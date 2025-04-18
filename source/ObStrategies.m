@@ -40,7 +40,7 @@ const long kLineBufferMax = 1024;	// this is much bigger than it needs to be !!@
 #define kDeckName_Fourth @"Strategies4"
 #define kDeckName_Fifth  @"Strategies5"
 
-
+#define kDeckFileType    @"txt"
 
 
 
@@ -81,20 +81,20 @@ const long kLineBufferMax = 1024;	// this is much bigger than it needs to be !!@
 	switch( deck )
 	{
 		case kObDeck_FirstEdition:
-			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_First ofType:@"txt"];
+			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_First ofType:kDeckFileType];
 			break;
 		case kObDeck_SecondEdition:
-			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Second ofType:@"txt"];
+			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Second ofType:kDeckFileType];
 			break;
 		case kObDeck_ThirdEdition:
-			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Third ofType:@"txt"];
+			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Third ofType:kDeckFileType];
 			break;
 		case kObDeck_FourthEdition:
-			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Fourth ofType:@"txt"];
+			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Fourth ofType:kDeckFileType];
 			break;
 		default:
 		case kObDeck_FifthEdition:
-			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Fifth ofType:@"txt"];
+			basepath = [[NSBundle mainBundle] pathForResource:kDeckName_Fifth ofType:kDeckFileType];
 			break;
 	}
 

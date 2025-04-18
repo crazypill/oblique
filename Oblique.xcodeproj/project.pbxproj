@@ -23,6 +23,7 @@
 		FA0B67372128E154005B6DEA /* Strategies3.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5D90DF388C700EA3111 /* Strategies3.txt */; };
 		FA0B67382128E154005B6DEA /* Strategies4.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5DA0DF388C700EA3111 /* Strategies4.txt */; };
 		FA0B67392128E154005B6DEA /* Strategies5.txt in Resources */ = {isa = PBXBuildFile; fileRef = FADEE5DD0DF388C700EA3111 /* Strategies5.txt */; };
+		FA9A5DFC2DB2EAAA003A0165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9A5DFB2DB2EAAA003A0165 /* Assets.xcassets */; };
 		FADEE4ED0DF3817800EA3111 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADEE4E90DF3817800EA3111 /* MainWindow.xib */; };
 		FADEE4EF0DF3817800EA3111 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADEE4EB0DF3817800EA3111 /* MainView.xib */; };
 		FADEE50C0DF381BF00EA3111 /* ObCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEE5000DF381BF00EA3111 /* ObCardView.m */; };
@@ -103,6 +104,7 @@
 		FA012BFB2127725F00352D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA012BFD2127725F00352D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA093FFB0E7AEEB600435014 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about.png; path = images/default/about.png; sourceTree = "<group>"; };
+		FA9A5DFB2DB2EAAA003A0165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = images/Assets.xcassets; sourceTree = "<group>"; };
 		FADEE4E80DF3817800EA3111 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
 		FADEE4E90DF3817800EA3111 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = resources/MainWindow.xib; sourceTree = "<group>"; };
 		FADEE4EB0DF3817800EA3111 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainView.xib; path = resources/MainView.xib; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				FADEE4E80DF3817800EA3111 /* Info.plist */,
 				FAE1A7630E64F96300750271 /* Entitlements.plist */,
+				FA9A5DFB2DB2EAAA003A0165 /* Assets.xcassets */,
 				FADEE4E90DF3817800EA3111 /* MainWindow.xib */,
 				FADEE4EB0DF3817800EA3111 /* MainView.xib */,
 				FADEE54A0DF3832800EA3111 /* info.png */,
@@ -335,6 +338,7 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = S555K9VRCW;
+						LastSwiftMigration = 1620;
 						ProvisioningStyle = Automatic;
 					};
 					FA012BE32127725C00352D61 = {
@@ -379,6 +383,7 @@
 			files = (
 				FADEE4ED0DF3817800EA3111 /* MainWindow.xib in Resources */,
 				FADEE4EF0DF3817800EA3111 /* MainView.xib in Resources */,
+				FA9A5DFC2DB2EAAA003A0165 /* Assets.xcassets in Resources */,
 				FADEE5500DF3832800EA3111 /* info.png in Resources */,
 				FADEE5530DF3832800EA3111 /* Default.png in Resources */,
 				FADEE5540DF3832800EA3111 /* icon.png in Resources */,
@@ -472,6 +477,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,11 +490,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
 				INFOPLIST_FILE = resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
 				PRODUCT_NAME = Oblique;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -495,6 +508,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,11 +519,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
 				INFOPLIST_FILE = resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
 				PRODUCT_NAME = Oblique;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1043,6 +1063,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1051,12 +1074,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
 				INFOPLIST_FILE = resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
 				PRODUCT_NAME = Oblique;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Distribution;
@@ -1079,6 +1106,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1088,12 +1118,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Oblique_Prefix.pch;
 				INFOPLIST_FILE = resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.folabs.oblique;
 				PRODUCT_NAME = Oblique;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Adhoc;
