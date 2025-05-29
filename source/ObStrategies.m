@@ -128,12 +128,12 @@ const long kLineBufferMax = 1024;	// this is much bigger than it needs to be !!@
 	// start off getting the copyright string and then skip a newline
 	char line[kLineBufferMax];
 	fgets( line, kLineBufferMax, cardFile );
-	mCopyright = [[NSString alloc] initWithBytes:line length:strlen( line ) encoding:NSMacOSRomanStringEncoding];
+	mCopyright = [[NSString alloc] initWithBytes:line length:strlen( line ) encoding:NSUTF8StringEncoding];
 	
 	while( fgets( line, kLineBufferMax, cardFile ) != NULL ) 
 	{
 		// allocate a string for our array and copy this line in there...
-		[mCardArray addObject:[[NSString alloc] initWithBytes:line length:strlen( line ) encoding:NSMacOSRomanStringEncoding]];
+		[mCardArray addObject:[[NSString alloc] initWithBytes:line length:strlen( line ) encoding:NSUTF8StringEncoding]];
 	}
 	fclose( cardFile );
 

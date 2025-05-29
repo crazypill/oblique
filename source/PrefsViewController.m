@@ -28,8 +28,6 @@
 // define this to see what methods are being called as a delegate or override
 //#define CHECK_RESPONSES
 
-static const float kPrefsTableTitleHeight     = 34.0f;
-static const float kPrefsTableCopyrightHeight = 94.0f;	// boy, any smaller and I get an ellipsis at the end of the text "sometimes", annoying at best
 static const float kPrefsTableAboutHeight     = 69.0f;
 
 #define kPrefsNavTitle           @"Preferences"
@@ -41,7 +39,7 @@ static const float kPrefsTableAboutHeight     = 69.0f;
 #define kPrefsFourthEditionEntry @"Fourth Edition"
 #define kPrefsFifthEditionEntry  @"Fifth Edition"
 
-#define kPrefsAboutFormat        @"Oblique v%@\nOblique Strategies © Brian Eno and Peter Schmidt\nSoftware © 2008-2018 Far Out Labs LLC\nSoftware written by: Alex Lelièvre\n"
+#define kPrefsAboutFormat        @"Oblique v%@\nOblique Strategies © Brian Eno and Peter Schmidt\nSoftware makes fair use of the above copyrights\nSoftware written by: Alex Lelièvre\n"
 
 
 enum
@@ -94,11 +92,11 @@ enum
 	for( int i = 0; i < kPrefsNumberOfEditions; i++ )
 		mEditions[i] = [[UITableViewCell alloc] init];
 
-	mEditions[0].text = kPrefsFirstEditionEntry;
-	mEditions[1].text = kPrefsSecondEditionEntry;
-	mEditions[2].text = kPrefsThirdEditionEntry;
-	mEditions[3].text = kPrefsFourthEditionEntry;
-	mEditions[4].text = kPrefsFifthEditionEntry;
+	mEditions[0].textLabel.text = kPrefsFirstEditionEntry;
+	mEditions[1].textLabel.text = kPrefsSecondEditionEntry;
+	mEditions[2].textLabel.text = kPrefsThirdEditionEntry;
+	mEditions[3].textLabel.text = kPrefsFourthEditionEntry;
+	mEditions[4].textLabel.text = kPrefsFifthEditionEntry;
 
 	// put copyright text display below 
 	mAboutText     = [[UITableViewCell alloc] init];
@@ -112,8 +110,9 @@ enum
 	aboutText.font        = [UIFont systemFontOfSize:9];
 	aboutText.text        = [NSString stringWithFormat:kPrefsAboutFormat, [[[NSBundle mainBundle] infoDictionary] valueForKey:kApplicationVersionKey]];
     aboutText.userInteractionEnabled = NO;
-    mAboutText.image      = [UIImage imageNamed:kApplicationAboutIcon];
-	mAboutText.font       = [UIFont systemFontOfSize:11];
+    aboutText.backgroundColor  = [UIColor clearColor];
+    mAboutText.imageView.image = [UIImage imageNamed:kApplicationAboutIcon];
+	mAboutText.textLabel.font  = [UIFont systemFontOfSize:11];
 	[mAboutText.contentView addSubview:aboutText];
 
 
@@ -132,7 +131,10 @@ enum
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	long selectedRow = indexPath.row;
-
+    
+    if( indexPath.section != kTableGroup_Editions )
+        return;
+    
 	// lazy way to clear check marks without state
 	for( int i = 0; i < kPrefsNumberOfEditions; i++ )
 		mEditions[i].accessoryType = UITableViewCellAccessoryNone;
@@ -143,6 +145,11 @@ enum
 	[mPrefTable reloadData];
 }
 
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.section == kTableGroup_Editions;
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -191,31 +198,12 @@ enum
 }
 
 
-
-
-- (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-	if( section != kTableGroup_Editions )
-        return 0;
-        
-    return kPrefsTableTitleHeight;
-}
-
-- (CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
-{
-	if( section != kTableGroup_Editions )
-        return 0;
-        
-    return kPrefsTableCopyrightHeight;
-}
-
-
-- (CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
-{
-	if( indexPath.section == kTableGroup_About )
-        return kPrefsTableAboutHeight;
+    if( indexPath.section == kTableGroup_Editions )
+        return -1.0f;
     
-	return tableView.rowHeight;
+    return kPrefsTableAboutHeight + 6;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
