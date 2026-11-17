@@ -23,10 +23,11 @@
 /////////////////////////////////////////////////////////////////////
 
 #import <UIKit/UIKit.h>
+#import "ObliqueAppDelegate.h"
 
 int main(int argc, char *argv[]) {
 	
-	int retVal = UIApplicationMain( argc, argv, nil, nil );
+	int retVal = UIApplicationMain( argc, argv, nil, NSStringFromClass([ObliqueAppDelegate class]) );
 	return retVal;
 }
 

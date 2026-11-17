@@ -31,12 +31,11 @@
 @synthesize rootViewController;
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application 
+- (void)applicationDidFinishLaunching:(UIApplication *)application
 {
 	mStrategies = [[ObStrategies alloc] init];
     
     self.window.rootViewController = rootViewController;
-//	[window addSubview:[rootViewController view]];
 	[window makeKeyAndVisible];
 }
 

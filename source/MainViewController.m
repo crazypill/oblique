@@ -23,6 +23,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #import "MainViewController.h"
+#import "SceneDelegate.h"
 #import "ObCardView.h"
 
 @implementation MainViewController
@@ -33,8 +34,10 @@
     self = [super init];
 	if( !self )
         return self;
-        
-    self.view = [[ObCardView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    CGRect oldRect = CGRectMake( 0, 0, 320, 480 );
+    self.view = [[ObCardView alloc] initWithFrame:oldRect];
+//    self.view = [[ObCardView alloc] initWithFrame:SceneDelegate.getWindowRect];
 
 	return self;
 }

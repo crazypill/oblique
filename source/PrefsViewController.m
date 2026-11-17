@@ -120,7 +120,7 @@ enum
 	[mPrefTable reloadData];
 	
 	// set the current edition
-	mEditions[currentEdition - 2].accessoryType = UITableViewCellAccessoryCheckmark;
+	mEditions[currentEdition - 1].accessoryType = UITableViewCellAccessoryCheckmark;
 	
 	return self;
 }

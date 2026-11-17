@@ -25,7 +25,7 @@
 #import "RootViewController.h"
 #import "MainViewController.h"
 #import "PrefsViewController.h"
-
+#import "SceneDelegate.h"
 
 @implementation RootViewController
 
@@ -60,7 +60,8 @@
 	mPrefsController = viewController;
 	
 	// Set up the navigation bar
-	UINavigationBar* aNavigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
+    CGRect windowRect = SceneDelegate.getWindowRect;
+	UINavigationBar* aNavigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0, 0.0, windowRect.size.width, 44.0)];
 	aNavigationBar.barStyle = UIBarStyleBlackOpaque;
 	mPrefsNavigationBar = aNavigationBar;
 	

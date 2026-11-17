@@ -110,7 +110,7 @@ char* const firstUse  = "Thank you for using this iPhone native version of Obliq
         // this is where we grab the random card off the deck.  We _depend_ on the fact that the display routines are properly implemented and come here once
         mText.text = [[gApp getDeck] getRandomCard];
         mText.font = kTextFont;
-        mText.textColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0f];
+        mText.textColor = [UIColor blackColor];
         
         // center text in card
         CGSize textSize = [mText.text sizeWithFont:kTextFont constrainedToSize:self.bounds.size lineBreakMode:mText.lineBreakMode];
@@ -119,15 +119,15 @@ char* const firstUse  = "Thank you for using this iPhone native version of Obliq
 	}
 	else
 	{
-		mText.textColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
+		mText.textColor = [UIColor whiteColor];
 		mText.text = kTitleString;
 		mText.font = kTitleFont;
-		[mText drawTextInRect:CGRectMake( kCardSlop, kCardTextTop, [self bounds].size.width - (kCardSlop * 2), kCardTextHeight )];
+		[mText drawTextInRect:CGRectMake( kCardSlop, kCardTextTop, self.bounds.size.width - (kCardSlop * 2), kCardTextHeight )];
 		
 		// put text underneath
 		mText.text = kTitleSubString;
 		mText.font = kMiscFont;
-		[mText drawTextInRect:CGRectMake( kCardSlop, kCardTextTop + kCardSubTextYOffset, [self bounds].size.width - (kCardSlop * 2), 60 )];
+		[mText drawTextInRect:CGRectMake( kCardSlop, kCardTextTop + kCardSubTextYOffset, self.bounds.size.width - (kCardSlop * 2), 60 )];
 	}
 
 	CGContextRestoreGState( ctx );
